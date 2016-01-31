@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ProgressBarSample.Views.FormOne
+namespace ProgressBarSample.Views
 {
     /// <summary>
     /// Interaction logic for FormOneView.xaml

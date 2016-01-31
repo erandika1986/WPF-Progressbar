@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace ProgressBarSample.ViewModels
 {
@@ -12,6 +13,8 @@ namespace ProgressBarSample.ViewModels
             formOne.TotalPercentageChanged += TotalPercentageChanged;
 
             progressBarViewModel = new ProgressBarViewModel();
+
+            SelectedContent = Contents.FirstOrDefault();
         }
 
         private void TotalPercentageChanged(float value)
