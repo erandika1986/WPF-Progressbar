@@ -1,15 +1,11 @@
 ﻿using ProgressBarSample.Common;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProgressBarSample.ViewModels
 {
     public class TextBoxViewModel:BaseViewModel
     {
-        public event Action<System.EventArgs> ValueChanged;
+        public event Action<bool> ValueChanged;
 
         public TextBoxViewModel(int textBoxId,float weightage)
         {
@@ -64,15 +60,7 @@ namespace ProgressBarSample.ViewModels
         {
             if (ValueChanged != null)
             {
-                var eventArgs = new InputChangedEventArgs()
-                {
-                    Id = textBoxId,
-                    InputType = inputType,
-                    Value = text,
-                    Weightage = weightage
-                };
-
-                ValueChanged(eventArgs);
+                ValueChanged(true);
             }
         }
     }

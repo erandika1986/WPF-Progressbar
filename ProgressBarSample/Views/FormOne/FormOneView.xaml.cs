@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ProgressBarSample
+namespace ProgressBarSample.Views.FormOne
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for FormOneView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class FormOneView : UserControl
     {
-        public MainWindow()
+        public FormOneView()
         {
             InitializeComponent();
-            this.DataContext = new MainWindowViewModel();
         }
     }
 }

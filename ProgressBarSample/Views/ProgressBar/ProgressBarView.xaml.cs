@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ProgressBarSample
+namespace ProgressBarSample.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ProgressBarView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProgressBarView : UserControl
     {
-        public MainWindow()
+        public ProgressBarView()
         {
             InitializeComponent();
-            this.DataContext = new MainWindowViewModel();
         }
     }
 }
