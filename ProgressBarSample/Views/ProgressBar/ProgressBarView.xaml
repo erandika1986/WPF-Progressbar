@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-            
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <ProgressBar Width="300" Height="40" Value="{Binding Progress}" />
+        </StackPanel>
+       
     </Grid>
 </UserControl>

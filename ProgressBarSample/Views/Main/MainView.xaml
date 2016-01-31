@@ -27,15 +27,9 @@
         </Grid>
 
         <Grid Grid.Row="1">
-            <ContentControl Content="{Binding SelectedContent}">
-                <ContentControl.Resources>
-                    <DataTemplate DataType="{x:Type vm:ProgressBarViewModel}">
-                        <Grid Background="White">
-                            <vw:ProgressBarView/>
-                        </Grid>
-                    </DataTemplate>
-                </ContentControl.Resources>
-            </ContentControl>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <ProgressBar Width="300" Height="40" Value="{Binding ProgressBarViewModel.Progress}" />
+            </StackPanel>
         </Grid>
     </Grid>
 </UserControl>

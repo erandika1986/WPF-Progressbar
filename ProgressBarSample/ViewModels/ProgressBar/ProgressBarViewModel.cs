@@ -10,12 +10,26 @@ namespace ProgressBarSample.ViewModels
     {
         public ProgressBarViewModel()
         {
-
+            progress = 0.0f;
+            RaisedPropertyChanged("Progress");
         }
 
         public void UpdatePrecentage(float precentage)
         {
-
+            progress = precentage;
+            RaisedPropertyChanged("Progress");
         }
+
+        private float progress;
+        public float Progress
+        {
+            get { return progress; }
+            set
+            {
+                progress = value;
+                RaisedPropertyChanged("Progress");
+            }
+        }
+
     }
 }
